@@ -12,7 +12,9 @@
         let doms = document.getElementsByTagName(TAG);
         let element = document.getElementsByTagName(TAG);
         for (index = element.length - 1; index >= 0; index--) {
-            element[index].parentNode.removeChild(element[index]);
+            if(element.getAttribute("src").includes("embed.twitch.tv") {
+                element[index].parentNode.removeChild(element[index]);
+            }
         }
     }
 
